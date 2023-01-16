@@ -1,0 +1,61 @@
+
+.banner {
+    object-fit: cover;
+    width: 90%;
+    margin: 50px;
+   text-align: center;
+   display: block;
+
+}
+.cardContact {
+    display: grid;
+    grid-template-columns: 80px, 80px;
+    grid-template-rows: repeat(3, 50px);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px gray;
+    font-family: cursive;
+   
+           
+    div{
+        align-self: end;
+        margin-left: 20px;
+        pointer-events: none;
+    }
+   .cardImg {
+        object-fit: contain;
+        width: 150px;
+        border-radius: 50%;    
+        grid-area: 1 / 1 / 4 / 2;
+            img {
+                padding: 20px;
+            }
+          }
+    .cardFullName{
+        grid-area: 1 / 2 / 2 / 3;
+        font-weight: bold;
+        color: grey
+        
+            }
+       .cardPhone{
+        grid-area: 2 / 2 / 3 / 3;
+
+    }
+    .cardEmail{
+        grid-area: 3 / 2 / 4 / 3;
+    }
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    :hover {
+    // background:linear-gradient(10deg, pink, white);
+    
+    background-color: #8a0027;
+background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+}
+}
+
